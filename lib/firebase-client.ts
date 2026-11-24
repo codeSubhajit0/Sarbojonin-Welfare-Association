@@ -26,7 +26,7 @@ export const firebaseConfigError =
         : "Firebase client configuration is missing. Add NEXT_PUBLIC_FIREBASE_* variables.";
 
 const firebaseConfig: FirebaseOptions = {
-    apiKey: requiredEnv.apiKey || "AIzaSyBuildPlaceholder000000000000000000",
+    apiKey: requiredEnv.apiKey || "AIzaSyD21gB_qU8HNUz48dA1I6jGtAZLsc3PE4o" || "AIzaSyBuildPlaceholder000000000000000000",
     authDomain: requiredEnv.authDomain || "build-placeholder.firebaseapp.com",
     projectId: requiredEnv.projectId || "build-placeholder",
     storageBucket: requiredEnv.storageBucket || "build-placeholder.appspot.com",
