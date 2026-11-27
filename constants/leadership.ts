@@ -42,7 +42,7 @@ export const trusteeGroups: TrusteeGroup[] = [
     },
     {
         id: 4,
-        image: "/images/trusteemembers/Pallab Bhanja Chaudhary Vice President.jpeg",
+        image: "/images/trusteemembers/Pallab Bhanja Chaudhary Vice President.jpg",
         members: [{ name: "Pallab Bhanja Chaudhary", position: "Vice President" }],
     },
     {

@@ -9,6 +9,12 @@ import {
   FaMapMarkerAlt,
 } from "react-icons/fa";
 
+const socialLinks = [
+  {name: FaFacebookF, href: "https://www.facebook.com/profile.php?id=61552974308608"},
+  {name: FaInstagram, href: "https://www.instagram.com/sarbojaninwelfareassociation?igsh=MXR6NGg1eGRpbG42NQ%3D%3D&utm_source=qr"},
+  {name: FaYoutube, href: "https://www.youtube.com/@sarbojaninwelfareassociation"},
+];
+
 export default function Footer() {
   return (
       <footer className="bg-forest text-white">
@@ -39,13 +45,13 @@ export default function Footer() {
               service since 2019.
             </p>
             <div className="flex gap-3 mt-5">
-              {[FaFacebookF, FaInstagram, FaYoutube].map((Icon, i) => (
+              {socialLinks.map((Icon, i) => (
                   <a
                       key={i}
-                      href="#"
+                      href={`${Icon.href}`}
                       className="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center hover:bg-gold hover:border-gold transition-colors"
                   >
-                    <Icon size={14} />
+                    <Icon.name size={14} />
                   </a>
               ))}
             </div>
